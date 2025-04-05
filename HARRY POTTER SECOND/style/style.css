@@ -1,0 +1,125 @@
+/* CSS Document */
+
+@font-face {
+    font-family: 'Harry P';
+    src: url("../fonts/HARRYP__.TTF") format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+	font-family: "Harry P", sans-serif;
+}
+
+.arkaplan {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/hogwatsgece.png");
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+    border-bottom: 3px solid rgba(0, 0, 0, .2);
+    background: rgba(0, 0, 0, .4);
+}
+
+.menu img {
+    width: 100px;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    background: rgba(100, 100, 100, 0.1);
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 30px 10px;
+    text-decoration: none;
+    color: #D2C677;
+    background: rgba(0, 0, 0, 0.3);
+	letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+    background: #78654F;
+    color: #fff;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    padding: 10px 0;
+    margin-top: 1px;
+    z-index: 1000;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    padding: 10px;
+}
+
+nav ul li ul li a {
+    padding: 10px 20px;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.menu {
+    padding: 0 100px;
+}
+
+nav {
+    margin-left: 100px;
+}
